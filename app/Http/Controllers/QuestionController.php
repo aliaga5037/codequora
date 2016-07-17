@@ -106,9 +106,6 @@ class QuestionController extends Controller
      */
     public function edit($id,$quesId)
     {
-        for ($i=0; $i < count($usr_id) ; $i++) { 
-        echo $usr_id[$i]->id;
-        }
         
         if ($id != Auth::user()->id) {
                     return redirect()->intended('/');
